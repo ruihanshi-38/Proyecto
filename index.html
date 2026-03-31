@@ -2,35 +2,67 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Velada - Únete al Equipo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body class="bg-black text-white">
-    <nav class="p-6 bg-red-900 text-center">
-        <h1 class="text-3xl font-bold">LA VELADA DEL AÑO</h1>
+<body class="bg-black text-white font-sans">
+
+    <nav class="p-6 bg-red-950 text-center border-b border-red-800">
+        <h1 class="text-2xl md:text-3xl font-black tracking-tighter">LA VELADA DEL AÑO</h1>
     </nav>
     
-    <div class="p-10 text-center">
-        <h2 class="text-5xl font-extrabold text-amber-500 mb-4">¡ÚNETE AL EQUIPO!</h2>
-        <p class="text-xl">Estamos buscando staff para el evento más grande del año.</p>
-        <button class="mt-8 bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-bold">
+    <div class="py-20 px-10 text-center bg-gradient-to-b from-red-900/20 to-black">
+        <h2 class="text-5xl md:text-7xl font-extrabold text-amber-500 mb-6 drop-shadow-lg">
+            ¡ÚNETE AL EQUIPO!
+        </h2>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+            Estamos buscando staff comprometido para el evento más grande de la historia de los streamers.
+        </p>
+        
+        <a href="#contacto" class="mt-10 inline-block bg-red-600 hover:bg-red-700 hover:scale-105 transition-transform text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-red-900/40">
             POSTULAR AHORA
-        </button>
+        </a>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
-        <div class="bg-gray-900 p-6 rounded-lg border border-red-500">
-            <h3 class="text-xl font-bold">Seguridad</h3>
-            <p>Cuida a los streamers y al público.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10 max-w-6xl mx-auto">
+        <div class="bg-zinc-900 p-8 rounded-2xl border border-red-900/50 hover:border-red-500 transition-colors">
+            <h3 class="text-2xl font-bold text-red-500 mb-3">Seguridad</h3>
+            <p class="text-gray-400">Control de accesos y cuidado de los protagonistas del evento.</p>
         </div>
-        <div class="bg-gray-900 p-6 rounded-lg border border-red-500">
-            <h3 class="text-xl font-bold">Producción</h3>
-            <p>Ayuda detrás de cámaras.</p>
+        <div class="bg-zinc-900 p-8 rounded-2xl border border-red-900/50 hover:border-red-500 transition-colors">
+            <h3 class="text-2xl font-bold text-red-500 mb-3">Producción</h3>
+            <p class="text-gray-400">Asistencia técnica, montaje de escenario y apoyo en backstage.</p>
         </div>
-        <div class="bg-gray-900 p-6 rounded-lg border border-red-500">
-            <h3 class="text-xl font-bold">Logística</h3>
-            <p>Organiza la entrada y salida.</p>
+        <div class="bg-zinc-900 p-8 rounded-2xl border border-red-900/50 hover:border-red-500 transition-colors">
+            <h3 class="text-2xl font-bold text-red-500 mb-3">Logística</h3>
+            <p class="text-gray-400">Gestión de acreditaciones y atención al público asistente.</p>
         </div>
     </div>
+
+    <div id="contacto" class="py-20 px-10 bg-zinc-950 text-center border-t border-red-900/30">
+        <h2 class="text-4xl font-bold mb-4 text-white">CONTACTO</h2>
+        <p class="text-gray-400 mb-10">Haz clic en cualquiera de nuestras redes para enviar tu CV:</p>
+        
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="mailto:staff@lavelada.com" class="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-gray-200 transition-all">
+                ✉️ Correo
+            </a>
+            <a href="#" class="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-lg font-bold hover:opacity-90">
+                📸 Instagram
+            </a>
+            <a href="#" class="flex items-center gap-2 bg-sky-500 text-white px-8 py-3 rounded-lg font-bold hover:bg-sky-600">
+                🐦 Twitter (X)
+            </a>
+        </div>
+        
+        <p class="mt-20 text-gray-600 text-sm italic">
+            © 2026 La Velada del Año - Proyecto de Práctica
+        </p>
+    </div>
+
 </body>
 </html>
